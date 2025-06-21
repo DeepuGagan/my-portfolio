@@ -5,10 +5,10 @@ import carcatalogImg from '@/../public/images/car-catalog.png';
 import filedriveImg from '@/../public/images/file-drive.png';
 import projectmanagementImg from '@/../public/images/project-management.png';
 import reactfoodImg from '@/../public/images/react-food.png';
-import surgeImg from '@/../public/images/surge.png';
-import portfolioImg from '@/../public/images/portfolio.png';
-import auditMasterImg from '@/../public/images/audit-master.png';
-import accountingImg from '@/../public/images/accounting.jpg';
+import exploreEaseImg from '@/../public/images/ExploreEase-min.png';
+import stitchEcommerceImg from '@/../public/images/Stitch-min.png';
+import newslyNewsImg from '@/../public/images/NewslyWebsite-min.png';
+import scribeBotImg from '@/../public/images/ScribeBot-min.png';
 import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
 export const links = [
@@ -37,40 +37,6 @@ export const links = [
     id: 'contact',
   },
 ];
-
-// export const experiencesData = [
-//   {
-//     title: 'Trustsoft s.r.o.',
-//     location: 'Prague, Czechia',
-//     description:
-//       'Front-end Developer. Providing services in the field of information technology services, including administration servers, cloud services, information systems and software development.',
-//     icon: React.createElement(BriefcaseBusinessIcon),
-//     date: 'Oct 2024 - Present',
-//   },
-//   {
-//     title: 'Granton s.r.o.',
-//     location: 'Prague, Czechia',
-//     description:
-//       'Front-end Developer. Delivering flawless UI/UX, Frontend Workflow, Architecture & App Development.',
-//     icon: React.createElement(BriefcaseBusinessIcon),
-//     date: 'Oct 2024 - Present',
-//   },
-//   {
-//     title: 'WhirrCrew s.r.o.',
-//     location: 'Prague, Czechia',
-//     description:
-//       'Front-end Developer. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration.',
-//     icon: React.createElement(BriefcaseBusinessIcon),
-//     date: 'Jun 2024 - Present',
-//   },
-//   {
-//     title: 'NAU',
-//     location: 'Kyiv, Ukraine',
-//     description: `Bachelor's degree in Cybersecurity. The faculty of Cyber Security and Software Engineering.`,
-//     icon: React.createElement(BookIcon),
-//     date: 'Sep 2022 - Jun 2024',
-//   },
-// ];
 
 export const experiencesData = [
   {
@@ -115,105 +81,46 @@ export const images = {
   reactfoodImg,
 };
 
-// export const projectsData = [
-//   {
-//     title: 'Audit Master',
-//     description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, Due Diligence & more.`,
-//     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'SCRUM Methodology'],
-//     imageUrl: auditMasterImg,
-//     link: 'https://auditmaster.ai/',
-//   },
-//   {
-//     title: 'Demo Automation of accounting documents processing',
-//     description:
-//       'Upload any receipt or invoice (even a crumpled one from your pocket) and watch our AI accurately extract its data.',
-//     tags: ['TypeScript', 'React', 'Docker', 'Next.js', 'GraphQL', 'Tailwind'],
-//     imageUrl: accountingImg,
-//     link: 'https://demo.grantonai.cz/',
-//   },
-//   {
-//     title: 'FileDrive',
-//     description:
-//       'A platform for decentralized file storage with robust user management.',
-//     tags: [
-//       'React',
-//       'TypeScript',
-//       'Next.js',
-//       'Convex',
-//       'Clerk',
-//       'Shadcn',
-//       'Tailwind',
-//     ],
-//     imageUrl: filedriveImg,
-//     link: 'https://github.com/bbyc4kes/file-drive',
-//   },
-//   {
-//     title: 'Portfolio',
-//     description: `Portfolio that you're currently viewing! This project showcases my work and provides information about me.`,
-//     tags: [
-//       'React',
-//       'TypeScript',
-//       'Next.js',
-//       'Framer Motion',
-//       'Cloudinary',
-//       'React Email',
-//       'Tailwind',
-//     ],
-//     imageUrl: portfolioImg,
-//     link: 'https://github.com/bbyc4kes/portfolio',
-//   },
-
-//   {
-//     title: 'Surge',
-//     description:
-//       'Service that allows users to build and manage their own websites with integrated payment processing.',
-//     tags: [
-//       'React',
-//       'TypeScript',
-//       'Next.js',
-//       'MySQL',
-//       'Clerk',
-//       'Stripe Connect',
-//       'Shadcn',
-//       'Tailwind',
-//     ],
-//     imageUrl: surgeImg,
-//     link: 'https://github.com/bbyc4kes/surge',
-//   },
-// ];
-
 export const projectsData = [
   {
     title: 'ExploreEase',
     description:
       'AI-powered travel itinerary planner that generates fully personalized travel plans based on user preferences. Built with OpenAI, Next.js, and Node.js to deliver dynamic, user-centric experiences.',
-    tags: ['React', 'Next.js', 'Node.js', 'OpenAI', 'Tailwind'],
-    // imageUrl: exploreEaseImg,
-    link: 'https://github.com/yourusername/exploreease', // Replace with actual link
+    tags: ['React', 'Next.js', 'Node.js', 'OpenAI', 'Tailwind','SwiperJs','Framer Motion'],
+    imageUrl: exploreEaseImg,
+    link: 'https://github.com/DeepuGagan/ExploreEase-prototype',
+  },
+  {
+    title: 'Stitch Ecommerce Website',
+    description:
+      'A modern, fully responsive fashion e-commerce platform featuring interactive 3D product models and seamless cart management. Built with React.js, Material-UI, Redux Toolkit, and Three.js.',
+    tags: ['React.js', 'Material-UI', 'Redux Toolkit', 'Three.js', 'E-commerce'],
+    imageUrl: stitchEcommerceImg,
+    link: 'https://github.com/DeepuGagan/stitch-ecommerce-website',
+  },  
+  // {
+  //   title: 'CodeSage',
+  //   description:
+  //     'Developed an intelligent Visual Studio Code extension using DeepSeek’s open-source tools. Enhances developer workflows by providing contextual code navigation, AI-assisted suggestions, and cross-repo insights.',
+  //   tags: ['VS Code Extension', 'TypeScript', 'AI', 'DeepSeek', 'Open Source'],
+  //   // imageUrl: codeSageImg,
+  //   link: 'https://github.com/yourusername/codesage',
+  // },
+  {
+    title: 'Newsly News Website',
+    description:
+      'A responsive news aggregator built with React and React Router that displays the latest news from multiple categories. Features intuitive navigation, dynamic loading, and an optimized UI for all devices.',
+    tags: ['React', 'React Router', 'NewsData.io API', 'Responsive Design', 'News Aggregator'],
+    imageUrl: newslyNewsImg,
+    link: 'https://github.com/DeepuGagan/news-article-website',
   },
   {
     title: 'Scribe Bot',
     description:
       'AI-driven web app designed to streamline content creation for writers. Leverages OpenAI to generate structured article outlines, reducing brainstorming time and boosting productivity.',
     tags: ['React', 'Next.js', 'Node.js', 'OpenAI', 'Tailwind'],
-    // imageUrl: scribeBotImg,
-    link: 'https://github.com/yourusername/scribe-bot', // Replace with actual link
-  },
-  {
-    title: 'CodeSage',
-    description:
-      'Developed an intelligent Visual Studio Code extension using DeepSeek’s open-source tools. Enhances developer workflows by providing contextual code navigation, AI-assisted suggestions, and cross-repo insights.',
-    tags: ['VS Code Extension', 'TypeScript', 'AI', 'DeepSeek', 'Open Source'],
-    // imageUrl: codeSageImg,
-    link: 'https://github.com/yourusername/codesage', // Replace with actual link
-  },
-  {
-    title: 'People Comics',
-    description:
-      'Creative web and mobile app that transforms user prompts into unique, shareable comics using DALL·E, Midjourney, and custom AI pipelines. Built with React, Node.js, and Ionic for cross-platform compatibility.',
-    tags: ['React', 'Node.js', 'DALL·E', 'Midjourney', 'Ionic', 'AI'],
-    // imageUrl: peopleComicsImg,
-    link: 'https://github.com/yourusername/people-comics', // Replace with actual link
+    imageUrl: scribeBotImg,
+    link: 'https://github.com/DeepuGagan/scribe-bot-prototype',
   },
 ]
 
