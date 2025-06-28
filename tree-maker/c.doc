@@ -1,0 +1,168 @@
+#Day 1: More Images & SVGs
+
+git add public/images/file-driv2e.png public/images/file-drive.png public/images/file-drive1.png
+git commit -m "Add file drive UI images"
+
+git add public/images/photo.jpg public/images/portfolio.png
+git commit -m "Add portfolio and photo assets"
+
+git add public/images/project-management.png public/images/react-food.png public/images/surge.png
+git commit -m "Add images for project management, food, and surge projects"
+
+
+
+
+
+
+
+#Day 2: Batch SVG Assets 1
+
+git add public/svgs/api-settings-svgrepo-com.svg public/svgs/axios.svg public/svgs/bitbucket-svgrepo-com.svg
+git commit -m "Add API settings, Axios, and Bitbucket SVGs"
+
+git add public/svgs/bootstrap-4-logo-svgrepo-com.svg public/svgs/brand-headlessui.svg public/svgs/clerk.svg public/svgs/cloudinary.svg
+git commit -m "Add Bootstrap, Headless UI, Clerk, and Cloudinary SVGs"
+
+git add public/svgs/db-table-svgrepo-com.svg public/svgs/elasticsearch-logo-svgrepo-com.svg public/svgs/es6-svgrepo-com.svg
+git commit -m "Add DB Table, Elasticsearch, and ES6 SVGs"
+
+
+
+
+
+
+
+#Day 3: Batch SVG Assets 2
+
+git add public/svgs/etc.svg public/svgs/express-original.svg public/svgs/file-type-css.svg
+git commit -m "Add misc, Express, and CSS file type SVGs"
+
+git add public/svgs/file-type-html.svg public/svgs/file-type-light-prisma.svg public/svgs/framer.svg
+git commit -m "Add HTML, Prisma, and Framer SVGs"
+
+git add public/svgs/git.svg public/svgs/github.svg public/svgs/golang.svg
+git commit -m "Add Git, GitHub, and Golang SVGs"
+
+
+
+
+
+
+
+#Day 4: Batch SVG Assets 3
+
+git add public/svgs/javascript-js.svg public/svgs/jira-svgrepo-com.svg public/svgs/mocha-svgrepo-com.svg
+git commit -m "Add JavaScript, Jira, and Mocha SVGs"
+
+git add public/svgs/mongodb-original.svg public/svgs/nextjs.svg public/svgs/node-js.svg
+git commit -m "Add MongoDB, Next.js, and Node.js SVGs"
+
+git add public/svgs/postgresql.svg public/svgs/react-query-seeklogo.svg public/svgs/react.svg
+git commit -m "Add PostgreSQL, React Query, and React SVGs"
+
+
+
+
+
+
+
+#Day 5: Batch SVG Assets 4
+
+git add public/svgs/redux-original.svg public/svgs/serverless-svgrepo-com.svg public/svgs/shadcnui.svg
+git commit -m "Add Redux, Serverless, and shadcn UI SVGs"
+
+git add public/svgs/tailwind-css.svg public/svgs/typescript-icon.svg public/svgs/vite-svgrepo-com.svg
+git commit -m "Add Tailwind, TypeScript, and Vite SVGs"
+
+
+
+
+
+
+
+#Day 6: Components & Utilities
+
+git add src/common/components/sections/contact/
+git commit -m "Add contact section and components"
+
+git add src/common/components/sections/hero/_components/cursor-blinker.jsx src/common/components/sections/hero/_components/redo-text-animation.jsx
+git commit -m "Add hero section cursor blinker and redo text animation components"
+
+git add src/common/components/shared/section-divider/
+git commit -m "Add section divider shared component"
+
+git add src/common/components/shared/section-heading/
+git commit -m "Add section heading shared component"
+
+
+
+
+
+
+
+#Day 7: UI & Logic
+
+git add src/common/components/ui/index.js
+git commit -m "Add UI entry index.js"
+
+git add src/common/lib/utils.js
+git commit -m "Add shared utility functions"
+
+git add src/common/theme/mode-toggler/
+git commit -m "Add theme mode toggler"
+
+
+
+
+
+
+
+#Day 8: Advanced Utilities and Project Tooling
+
+git add src/common/utils/react-email-starter/
+git commit -m "Add react email starter utilities"
+
+git add tree-maker/
+git commit -m "Add tree maker project/tooling"
+
+
+
+________________________________________________________________________________________________  
+# 1. Saturday, April 19, 2025
+export GIT_AUTHOR_DATE="2025-04-19T09:14:23"
+export GIT_COMMITTER_DATE="2025-04-19T09:14:23"
+
+# 2. Saturday, April 26, 2025
+export GIT_AUTHOR_DATE="2025-04-26T15:37:12"
+export GIT_COMMITTER_DATE="2025-04-26T15:37:12"
+
+# 3. Tuesday, May 20, 2025
+export GIT_AUTHOR_DATE="2025-05-20T10:52:40"
+export GIT_COMMITTER_DATE="2025-05-20T10:52:40"
+
+# 4. Saturday, May 24, 2025
+export GIT_AUTHOR_DATE="2025-05-24T14:09:31"
+export GIT_COMMITTER_DATE="2025-05-24T14:09:31"
+
+# 5. Sunday, May 25, 2025
+export GIT_AUTHOR_DATE="2025-05-25T11:22:58"
+export GIT_COMMITTER_DATE="2025-05-25T11:22:58"
+
+# 6. Tuesday, May 27, 2025
+export GIT_AUTHOR_DATE="2025-05-27T17:44:11"
+export GIT_COMMITTER_DATE="2025-05-27T17:44:11"
+
+# 7. Saturday, May 31, 2025
+export GIT_AUTHOR_DATE="2025-05-31T08:03:07"
+export GIT_COMMITTER_DATE="2025-05-31T08:03:07"
+
+# 8. Sunday, June 22, 2025
+export GIT_AUTHOR_DATE="2025-06-22T16:57:19"
+export GIT_COMMITTER_DATE="2025-06-22T16:57:19"
+
+
+unset GIT_AUTHOR_DATE
+unset GIT_COMMITTER_DATE
+
+
+________________________________________________________________________________________________
