@@ -29,7 +29,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="flex w-full flex-col items-center justify-center py-24 pb-[150px] text-center dark:bg-darkBg dark:text-white sm:pb-40"
+      className="flex w-full flex-col items-center justify-center py-20 pb-[150px] text-center dark:bg-darkBg dark:text-white sm:pb-40"
     >
       <SectionHeading>My skills</SectionHeading>
       <ul className="my-26 mb-[150px] flex max-w-[53rem] flex-wrap items-center justify-center gap-2 text-lg text-gray-800">
@@ -50,7 +50,7 @@ export default function Skills() {
               alt={skill[0]}
               width={24}
               height={24}
-              className="mr-2 inline h-6 w-6"
+              className="mr-2 inline h-6 w-6 hover:scale-125"
             />
             {skill[0]}
           </motion.li>
