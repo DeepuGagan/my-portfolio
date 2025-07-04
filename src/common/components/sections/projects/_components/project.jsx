@@ -3,7 +3,7 @@
 import { useRef } from 'react';
 import { projectsData } from '@/common/lib/data';
 import Image from 'next/image';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function Project({
@@ -14,20 +14,25 @@ export default function Project({
   link,
 }) {
   const ref = useRef(null);
+  const prefersReducedMotion = useReducedMotion();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['0 1', '1.33 1'],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  
+  // Use reduced animations for better performance and accessibility
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], prefersReducedMotion ? [1, 1] : [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  
+  // Conditionally use animations for better performance
+  const motionStyles = prefersReducedMotion 
+    ? { opacity: opacityProgess } 
+    : { scale: scaleProgess, opacity: opacityProgess };
 
   return (
     <motion.div
       ref={ref}
-      style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
-      }}
+      style={motionStyles}
       className="group mb-3 last:mb-0 sm:mb-8"
     >
       <Link href={link} target="_blank">
@@ -54,7 +59,12 @@ export default function Project({
           <Image
             src={imageUrl}
             alt="Project I worked on"
-            quality={95}
+            quality={85}
+            width={1024}
+            height={768}
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
             className="absolute -right-8 top-8 hidden w-[28.25rem] rounded-t-lg transition group-even:-left-12 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 sm:block"  /* -right-8 - change this to make changes on image section....-left-12 also for even */
           />
         </section>
